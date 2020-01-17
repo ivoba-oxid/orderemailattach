@@ -1,6 +1,6 @@
 <?php
 
-$sMetadataVersion = '2';
+$sMetadataVersion = '2.0';
 $aModule          = [
     'id'          => 'ivoba_orderemailattach',
     'title'       => '<strong>Ivo Bathke</strong>:  <i>Order email attachments</i>',
