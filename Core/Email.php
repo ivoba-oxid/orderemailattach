@@ -27,8 +27,8 @@ class Email extends Email_parent
         $this->_attachmentsClear = false;
         $this->addOrderEmailAttachments();
 
-        $return = parent::sendOrderEmailToUser($order, $subject);
-        
+        $return                  = parent::sendOrderEmailToUser($order, $subject);
+
         $this->_attachmentsClear = true;
 
         return $return;
@@ -46,8 +46,14 @@ class Email extends Email_parent
      */
     public function sendOrderEmailToOwner($order, $subject = null)
     {
-        $this->_attachmentsClear = false;
-        $this->addOrderEmailAttachments();
+        $cfg                     = Registry::getConfig();
+        if ($cfg->getConfigParam('ivoba_orderemailattach_add_to_ownermail')) {
+            $this->_attachmentsClear = false;
+            $this->addOrderEmailAttachments();
+        }
+        else {
+            $this->clearAttachments();
+        }
 
         $return = parent::sendOrderEmailToOwner($order, $subject);
 
