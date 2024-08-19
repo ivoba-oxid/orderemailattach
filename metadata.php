@@ -2,14 +2,14 @@
 
 $sMetadataVersion = '2.0';
 $aModule          = [
-    'id'          => 'ivoba_orderemailattach',
+    'id'          => \IvobaOxid\OrderEmailAttach\Module::MODULE_ID,
     'title'       => '<strong>Ivo Bathke</strong>:  <i>Order email attachments</i>',
     'description' => [
         'de' => 'Email Anhänge für die Bestell-Email',
         'en' => 'Add attachments to the order email',
     ],
     'thumbnail'   => 'ivoba-oxid.png',
-    'version'     => '1.1',
+    'version'     => '2.0',
     'author'      => 'Ivo Bathke',
     'email'       => 'ivo.bathke@gmail.com',
     'url'         => 'https://oxid.ivo-bathke.name#orderemailattach',
@@ -21,13 +21,13 @@ $aModule          = [
             'group' => 'ivoba_orderemailattach_main',
             'name'  => 'ivoba_orderemailattach_attachments_de',
             'type'  => 'str',
-            'value' => 'adb.pdf, widerrufsbelehrung.pdf',
+            'value' => 'agb.pdf, widerrufsbelehrung.pdf',
         ],
         [
             'group' => 'ivoba_orderemailattach_main',
             'name'  => 'ivoba_orderemailattach_attachments_en',
             'type'  => 'str',
-            'value' => 'adb.pdf, widerrufsbelehrung.pdf',
+            'value' => 'agb.pdf, widerrufsbelehrung.pdf',
         ],
         [
             'group' => 'ivoba_orderemailattach_main',

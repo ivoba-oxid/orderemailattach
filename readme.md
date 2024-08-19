@@ -12,7 +12,7 @@ Activate module in "Erweiterungen -> Module -> Ivo Bathke: Order email attachmen
 ## Requirements
 - UTF-8
 - PHP >= 7
-- Oxid eShop >= CE 6
+- Oxid eShop >= CE 7
 
 ## Todo
 - path to pdfs is currently hardcoded -> make configurable

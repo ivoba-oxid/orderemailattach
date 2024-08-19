@@ -3,3 +3,4 @@ vendor
 composer.lock
 source
 .phpstorm-oxid.meta.php
+.idea

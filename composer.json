@@ -1,6 +1,6 @@
 {
   "name": "ivoba-oxid/orderemailattach",
-  "description": "Order email attachments for OXID eShop 6.",
+  "description": "Order email attachments for OXID eShop 7.",
   "type": "oxideshop-module",
   "keywords": ["oxid", "modules", "eShop"],
   "homepage": "https://github.com/ivoba-oxid/orderemailattach",
@@ -11,16 +11,13 @@
     "oxid-esales/oxideshop-ce": "^v7.0"
   },
   "extra": {
-    "oxideshop": {
-      "target-directory": "ivoba/orderemailattach"
-    },
     "branch-alias": {
-      "dev-master": "1.1.x-dev"
+      "dev-master": "2.0.x-dev"
     }
   },
   "autoload": {
     "psr-4": {
-      "IvobaOxid\\OrderEmailAttach\\": "../../../source/modules/ivoba/orderemailattach"
+      "IvobaOxid\\OrderEmailAttach\\": "src"
     }
   }
 }
