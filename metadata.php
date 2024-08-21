@@ -13,7 +13,7 @@ $aModule          = [
     'author'      => 'Ivo Bathke',
     'email'       => 'ivo.bathke@gmail.com',
     'url'         => 'https://oxid.ivo-bathke.name#orderemailattach',
-    'extend'      => [\OxidEsales\Eshop\Core\Email::class => \IvobaOxid\OrderEmailAttach\Core\Email::class],
+    'extend'      => [\OxidEsales\EshopCommunity\Application\Model\Order::class => \IvobaOxid\OrderEmailAttach\Model\Order::class],
     'blocks'      => [],
     'settings'    => [
         // todo make languages dynamic
