@@ -69,7 +69,7 @@ class Email extends Email_parent
      */
     protected function addOrderEmailAttachments()
     {
-        $path = __DIR__ . '/../../../../out/pdf/'; //todo hardcoded, should be uploadable
+        $path = __DIR__ . '/../../../../../source/out/pdf/'; //todo hardcoded, should be uploadable
         $attPath = Registry::getUtilsFile()->normalizeDir($path);
 
         //detect language and add for language
