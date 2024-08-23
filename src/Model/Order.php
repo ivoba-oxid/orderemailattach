@@ -3,6 +3,7 @@
 namespace IvobaOxid\OrderEmailAttach\Model;
 
 use OxidEsales\EshopCommunity\Core\Registry;
+use IvobaOxid\OrderEmailAttach\Core\Email;
 
 class Order extends Order_parent
 {
@@ -16,8 +17,7 @@ class Order extends Order_parent
         $this->_oPayment = $oPayment;
 
         // todo
-        $oxEmail = oxNew(IvobaOxid\OrderEmailAttach\Core\Email::class);
-//        $oxEmail = oxNew(\OxidEsales\Eshop\Core\Email::class);
+        $oxEmail = oxNew(Email::class);
 
         // send order email to user
         if ($oxEmail->sendOrderEMailToUser($this)) {
