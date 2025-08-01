@@ -3,7 +3,7 @@
 $sMetadataVersion = '2.0';
 $aModule          = [
     'id'          => \IvobaOxid\OrderEmailAttach\Module::MODULE_ID,
-    'title'       => '<strong>Ivo Bathke</strong>:  <i>Order email attachments</i>',
+    'title'       => 'Ivo Bathke: Order email attachments',
     'description' => [
         'de' => 'Email Anhänge für die Bestell-Email',
         'en' => 'Add attachments to the order email',
